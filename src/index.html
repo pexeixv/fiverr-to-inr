@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite+Tailwind Template by Gavin Pereira</title>
+  <link rel="shortcut icon" href="//gavn.in/fav" type="image/x-icon">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="">
+
+  <section class="bg-white md:bg-neutral-100 min-h-screen p-0 md:py-20 md:px-5">
+
+    <div class="container max-w-4xl mx-auto px-4 md:px-12 py-8 md:py-20 bg-white rounded md:shadow">
+
+      <h1 class="flex items-center md:items-end justify-center flex-col md:flex-row gap-4"><img
+          src="https://upload.wikimedia.org/wikipedia/commons/1/18/Fiverr_Logo_09.2020.svg" alt="Fiverr" class="h-8" />
+        <span class="text-3xl">to <span class="font-bold">INR</span> </span>
+      </h1>
+
+      <form class="mt-16 md:mt-20 grid md:grid-cols-2">
+
+        <div class="flex flex-col mx-4 my-4 md:my-8 ">
+          <label for="input-order" class="text-xl font-bold ">Amount in USD</label>
+          <span class="text-sm">Order value</span>
+          <input type="number" id="input-order"
+            class="border w-full rounded-lg py-2 px-4 mt-2 focus-within:outline-none focus-within:ring-2 ring-fiverr"
+            data-type="order" />
+        </div>
+
+        <div class="flex flex-col mx-4 my-4 md:my-8 ">
+          <label for="input-client" class="text-xl font-bold">Client pays to Fiverr</label>
+          <span class="text-sm">+5.5%</span>
+          <input type="number" id="input-client"
+            class="border w-full rounded-lg py-2 px-4 mt-2 focus-within:outline-none focus-within:ring-2 ring-fiverr"
+            data-type="client" />
+        </div>
+
+        <div class="flex flex-col mx-4 my-4 md:my-8 ">
+          <label for="input-fiverr" class="text-xl font-bold">Fiverr pays to PayPal</label>
+          <span class="text-sm">-20%</span>
+          <input type="number" id="input-fiverr"
+            class="border w-full rounded-lg py-2 px-4 mt-2 focus-within:outline-none focus-within:ring-2 ring-fiverr"
+            data-type="fiverr" />
+        </div>
+
+        <div class="flex flex-col mx-4 my-4 md:my-8 ">
+          <label for="input-convert" class="text-xl font-bold">Amount in INR</label>
+          <span class="text-sm">$1 = ₹</span>
+          <input type="number" id="input-convert"
+            class="border w-full rounded-lg py-2 px-4 mt-2 focus-within:outline-none focus-within:ring-2 ring-fiverr"
+            data-type="convert" />
+        </div>
+
+        <div class="flex flex-col mx-4 my-4 md:my-8 md:col-span-2 ">
+          <label for="input-paypal" class="text-xl font-bold">PayPal pays to you</label>
+          <span class="text-sm">-₹2/$</span>
+          <input type="number" id="input-paypal"
+            class="border w-full rounded-lg py-2 px-4 mt-2 focus-within:outline-none focus-within:ring-2 ring-fiverr"
+            data-type="paypal" />
+        </div>
+
+
+
+
+
+      </form>
+
+
+
+    </div>
+
+  </section>
+
+
+
+</body>
+<script src="./main.js" type="module"></script>
+<script src="//r.gavinpereira.in"></script>
+<script>GPRibbon({ theme: 'dark' })</script>
+
+</html>
